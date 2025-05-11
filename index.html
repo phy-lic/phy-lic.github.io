@@ -6,29 +6,59 @@
   <title>Rajarshi Giri - Portfolio</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Optional: Font Awesome for icons -->
+  <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body { background-color: #f8f9fa; }
-    .hero { background: #6c8ea4; color: white; padding: 3rem 0; text-align: center; }
-    .navbar { margin-bottom: 2rem; }
-    .section-title { margin-top: 2rem; margin-bottom: 1rem; font-weight: bold; }
-    .card { margin-bottom: 1.5rem; }
-    footer { background: #343a40; color: #fff; text-align: center; padding: 1rem 0; margin-top: 2rem; }
+    .navbar { margin-bottom: 0; }
+    .hero-section {
+      background: linear-gradient(120deg, #6c8ea4 60%, #a8d0e6 100%);
+      color: white;
+      padding: 4rem 0 3rem 0;
+      text-align: center;
+    }
+    .section {
+      padding: 3rem 0;
+    }
+    #about { background: #f8f9fa; }
+    #interests { background: #e3f2fd; }
+    #projects { background: #fceabb; }
+    #publications { background: #e0f7fa; }
+    #contact { background: #f3e5f5; }
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+    .card {
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    }
+    footer {
+      background: #343a40;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 0;
+    }
     .profile-pic {
-      width: 140px;
-      height: 140px;
+      width: 120px;
+      height: 120px;
       object-fit: cover;
       border-radius: 50%;
       border: 4px solid #fff;
       box-shadow: 0 4px 16px rgba(0,0,0,0.15);
       margin-bottom: 1rem;
     }
+    .nav-link.active {
+      font-weight: bold;
+      color: #1976d2 !important;
+    }
   </style>
 </head>
 <body>
   <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
       <a class="navbar-brand" href="#">Rajarshi Giri</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -47,9 +77,9 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero-section">
     <div class="container">
-      <!-- Add your own photo here if you like -->
+      <!-- Optional: Add your own photo by uploading and using your image file -->
       <!-- <img src="your-photo.jpg" alt="Rajarshi Giri" class="profile-pic"> -->
       <h1 class="display-4">Rajarshi Giri</h1>
       <p class="lead">BS-MS Undergraduate at IISER Kolkata</p>
@@ -61,29 +91,33 @@
     </div>
   </section>
 
-  <div class="container">
-    <!-- About Me -->
-    <section id="about">
+  <!-- About Me -->
+  <section class="section" id="about">
+    <div class="container">
       <h2 class="section-title">About Me</h2>
       <p>
         I am a sophomore at IISER Kolkata, passionate about physics, research, and technology. I enjoy exploring new scientific ideas and building innovative projects. 
         <br>
         <strong>Looking for research internships and collaborations!</strong>
       </p>
-    </section>
+    </div>
+  </section>
 
-    <!-- Research Interests -->
-    <section id="interests">
+  <!-- Research Interests -->
+  <section class="section" id="interests">
+    <div class="container">
       <h2 class="section-title">Research Interests</h2>
       <ul>
         <li>Quantum Physics and Quantum Computing</li>
         <li>Condensed Matter Physics</li>
         <li>Computational Methods in Physics</li>
       </ul>
-    </section>
+    </div>
+  </section>
 
-    <!-- Projects -->
-    <section id="projects">
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <div class="container">
       <h2 class="section-title">Projects</h2>
       <div class="row">
         <div class="col-md-6">
@@ -106,10 +140,12 @@
         </div>
         <!-- Add more projects as needed -->
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Publications -->
-    <section id="publications">
+  <!-- Publications -->
+  <section class="section" id="publications">
+    <div class="container">
       <h2 class="section-title">Publications</h2>
       <ul>
         <li>
@@ -119,16 +155,18 @@
           Another publication or poster presentation...
         </li>
       </ul>
-    </section>
+    </div>
+  </section>
 
-    <!-- Contact -->
-    <section id="contact">
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
       <h2 class="section-title">Contact</h2>
       <p><i class="fas fa-envelope"></i> <a href="mailto:your@email.com">your@email.com</a></p>
       <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a></p>
       <p><i class="fab fa-github"></i> <a href="https://github.com/phy-lic" target="_blank">phy-lic</a></p>
-    </section>
-  </div>
+    </div>
+  </section>
 
   <footer>
     <div class="container">
