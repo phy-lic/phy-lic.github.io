@@ -77,9 +77,8 @@ section {
     width: auto;
     margin-right: 10px;
     vertical-align: middle;
-    max-width: 120px; /* Prevents logo from ever being too wide */
+    max-width: 120px;
 }
-
 .nav-link.active, .nav-link:focus, .nav-link:hover {
     color: #2bbbad !important;
     font-weight: bold;
@@ -104,6 +103,25 @@ section {
     color: #fff !important;
     text-shadow: 0 2px 8px rgba(30,42,60,0.4);
 }
+
+/* IISER Kolkata logo in hero section */
+.hero-logo {
+    height: 90px;
+    width: auto;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.15);
+    box-shadow: 0 2px 12px rgba(30,42,60,0.09);
+    border: none;
+}
+@media (max-width: 767px) {
+    .hero-logo {
+        height: 60px;
+    }
+}
+
 .profile-pic {
     border: 4px solid #fff;
     background: rgba(255,255,255,0.2);
@@ -198,12 +216,3 @@ body.dark-mode .icon-link:hover { color: #ffd700; }
 body.dark-mode .nav-link { color: #b2dfdb !important; }
 body.dark-mode .nav-link.active { color: #ffd700 !important; }
 body.dark-mode a { color: #ffd700; }
-
-
-.navbar-brand img {
-    height: 36px;
-    width: auto;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
