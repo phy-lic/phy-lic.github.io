@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Open+Sans:wght@400;600&family=Inter:wght@400;600&display=swap');
 
 :root {
     --primary: #233554;
@@ -10,32 +10,76 @@
     --shadow: 0 4px 32px rgba(44,62,80,0.07);
 }
 
+/* General body styles */
 body {
     font-family: 'Open Sans', Arial, sans-serif;
-    color: #222;
-    background-color: #f6f9fc;
+    color: var(--text);
+    background-color: var(--background);
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
+/* Headings for the whole site */
 h1, h2, h3, h4, h5, h6, .section-title {
-    font-family: 'Merriweather', serif;
+    font-family: 'EB Garamond', 'Merriweather', serif;
     font-weight: 700;
-    color: #233554;
+    color: var(--heading);
     letter-spacing: 0.02em;
-    font-size: 2.5rem;
     margin-bottom: 2rem;
 }
 
-a, .nav-link {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    color: #233554;
-    text-decoration: none;
+/* Academic research section style (matches Nilmani's) */
+.research-section {
+    margin-top: 12px;
 }
 
+.research-topic {
+    margin-bottom: 28px;
+    font-size: 1.16rem;
+    line-height: 1.7;
+    font-family: 'EB Garamond', 'Merriweather', serif;
+}
+
+.topic-title {
+    font-weight: 700;
+    font-size: 1.13em;
+    letter-spacing: 0.2px;
+    display: inline-block;
+    margin-bottom: 2px;
+}
+
+.topic-desc {
+    font-weight: 400;
+    margin-left: 4px;
+}
+
+/* Research summary paragraph */
+.summary {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 28px auto;
+    font-size: 1.18rem;
+    line-height: 1.7;
+    font-family: 'EB Garamond', 'Merriweather', serif;
+}
+
+/* Horizontal line styling for research section */
+hr {
+    border: none;
+    border-top: 1.5px solid #bbb;
+    margin: 32px 0 32px 0;
+}
+
+/* Navbar and links */
+a, .nav-link {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
 a:hover, .nav-link:hover {
-    color: #2bbbad;
+    color: var(--accent);
     text-decoration: underline;
 }
 
@@ -66,6 +110,7 @@ a:hover, .nav-link:hover {
     border-radius: 0.4rem;
 }
 
+/* Hero section */
 .hero-section {
     width: 100vw;
     min-height: 400px;
@@ -125,6 +170,7 @@ a:hover, .nav-link:hover {
     }
 }
 
+/* Cards for projects and blog */
 .card {
     border: none;
     border-radius: 1.2rem;
@@ -138,7 +184,7 @@ a:hover, .nav-link:hover {
     box-shadow: 0 8px 32px rgba(44,62,80,0.13);
 }
 .card-title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'EB Garamond', 'Merriweather', serif;
     font-weight: 700;
 }
 
@@ -169,7 +215,7 @@ a:hover, .nav-link:hover {
 }
 .blog-post h5 {
     color: var(--primary);
-    font-family: 'Playfair Display', serif;
+    font-family: 'EB Garamond', 'Merriweather', serif;
     font-weight: 700;
 }
 
@@ -190,6 +236,8 @@ footer {
     .section-title { font-size: 1.2rem; }
     section { padding: 2.5rem 0 2rem 0; }
     .blog-post { padding: 1rem 1rem; }
+    .summary { font-size: 1rem; }
+    .research-topic { font-size: 1.02rem; }
 }
 
 /* --- DARK MODE --- */
