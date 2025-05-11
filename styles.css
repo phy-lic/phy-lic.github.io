@@ -1,7 +1,5 @@
-/* Google Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap');
 
-/* Color Palette */
 :root {
     --primary: #233554;
     --accent: #2bbbad;
@@ -12,7 +10,6 @@
     --shadow: 0 4px 32px rgba(44,62,80,0.07);
 }
 
-/* General body styles */
 body {
     font-family: 'Inter', Arial, sans-serif;
     background-color: var(--background);
@@ -22,27 +19,13 @@ body {
     scroll-behavior: smooth;
 }
 
-/* Glassmorphism Navbar */
-.glass-nav {
-    background: rgba(255,255,255,0.92) !important;
-    box-shadow: var(--shadow);
-    backdrop-filter: blur(8px);
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    color: var(--heading);
+    font-weight: 700;
+    letter-spacing: 0.01em;
 }
 
-/* Section backgrounds for visual separation */
-#about { background: var(--section-alt); }
-#interests { background: #f0f5fa; }
-#projects { background: var(--section-alt); }
-#blog { background: #f4f7fa; }
-#contact { background: #eaf6f6; }
-
-/* Section spacing */
-section {
-    padding: 4rem 0 3rem 0;
-    min-height: 40vh;
-}
-
-/* Section titles */
 .section-title {
     font-size: 2.3rem;
     font-family: 'Playfair Display', serif;
@@ -53,41 +36,30 @@ section {
     text-align: center;
 }
 
-/* Cards for projects */
-.card {
-    border: none;
-    border-radius: 1.2rem;
-    box-shadow: 0 2px 16px rgba(44,62,80,0.06);
-    margin-bottom: 2rem;
-    transition: transform 0.2s, box-shadow 0.2s;
-    background: #fff;
-}
-.card:hover {
-    transform: translateY(-6px) scale(1.02);
-    box-shadow: 0 8px 32px rgba(44,62,80,0.13);
-}
-.card-title {
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
+a, .nav-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
 }
 
-/* Glassmorphism for cards */
-.glass-card {
-    background: rgba(255,255,255,0.88);
-    backdrop-filter: blur(6px);
+a:hover, .nav-link:hover {
+    color: var(--accent);
+    text-decoration: underline;
 }
 
-/* Navbar customizations */
-.navbar {
-    transition: background 0.4s;
+.glass-nav {
+    background: rgba(255,255,255,0.92) !important;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(8px);
 }
+
 .navbar-brand, .nav-link {
-    color: var(--primary) !important;
     font-family: 'Inter', Arial, sans-serif;
     font-weight: 600;
     letter-spacing: 0.5px;
-    transition: color 0.2s;
 }
+
 .navbar-brand img {
     height: 36px;
     width: auto;
@@ -95,6 +67,7 @@ section {
     vertical-align: middle;
     max-width: 120px;
 }
+
 .nav-link.active, .nav-link:focus, .nav-link:hover {
     color: var(--accent) !important;
     font-weight: bold;
@@ -102,14 +75,13 @@ section {
     border-radius: 0.4rem;
 }
 
-/* Hero section */
 .hero-section {
     width: 100vw;
     min-height: 400px;
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
     background: linear-gradient(rgba(35,53,84,0.33), rgba(43,187,173,0.13)),
-                url('8635a657-c593-4944-90a7-4150dfc5fad3~1.jpg') center center/cover no-repeat;
+                url('your-background.jpg') center center/cover no-repeat;
     color: #fff;
     text-align: center;
     padding: 7rem 0 4rem 0;
@@ -138,7 +110,6 @@ section {
     text-shadow: 0 2px 8px rgba(35,53,84,0.15);
 }
 
-/* IISER Kolkata logo in hero section */
 .hero-logo {
     height: 90px;
     width: auto;
@@ -163,12 +134,28 @@ section {
     }
 }
 
-.profile-pic {
-    border: 4px solid #fff;
-    background: rgba(255,255,255,0.2);
+.card {
+    border: none;
+    border-radius: 1.2rem;
+    box-shadow: 0 2px 16px rgba(44,62,80,0.06);
+    margin-bottom: 2rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    background: #fff;
+}
+.card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 8px 32px rgba(44,62,80,0.13);
+}
+.card-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
 }
 
-/* Icon links */
+.glass-card {
+    background: rgba(255,255,255,0.88);
+    backdrop-filter: blur(6px);
+}
+
 .icon-link {
     color: var(--accent);
     margin-right: 1.2rem;
@@ -181,18 +168,6 @@ section {
     transform: scale(1.15);
 }
 
-/* Fade-in animation for sections */
-.fade-in {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.7s, transform 0.7s;
-}
-.fade-in.visible {
-    opacity: 1;
-    transform: none;
-}
-
-/* Blog styling */
 .blog-post {
     background: #fff;
     border-radius: 0.7rem;
@@ -207,7 +182,6 @@ section {
     font-weight: 700;
 }
 
-/* Footer */
 footer {
     background: #f8fafc;
     color: var(--accent);
@@ -224,7 +198,6 @@ footer {
     .hero-section h1 { font-size: 2rem; }
     .section-title { font-size: 1.2rem; }
     section { padding: 2.5rem 0 2rem 0; }
-    .profile-pic { width: 90px; height: 90px; }
     .blog-post { padding: 1rem 1rem; }
 }
 
@@ -258,9 +231,7 @@ body.dark-mode .icon-link:hover { color: #ffd700; }
 body.dark-mode .nav-link { color: #b2dfdb !important; }
 body.dark-mode .nav-link.active { color: #ffd700 !important; }
 body.dark-mode a { color: #ffd700; }
-
-/* Ensure hero-section background image is visible in dark mode */
 body.dark-mode .hero-section {
     background: linear-gradient(rgba(35,53,84,0.33), rgba(43,187,173,0.13)),
-                url('8635a657-c593-4944-90a7-4150dfc5fad3~1.jpg') center center/cover no-repeat !important;
+                url('your-background.jpg') center center/cover no-repeat !important;
 }
