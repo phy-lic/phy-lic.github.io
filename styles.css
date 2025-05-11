@@ -88,13 +88,24 @@ section {
 
 /* Hero section */
 .hero-section {
-    background: linear-gradient(rgba(30,42,60,0.7), rgba(30,42,60,0.6)), url('website_header.jpg') center center/cover no-repeat;
+    background: linear-gradient(rgba(30,42,60,0.3), rgba(30,42,60,0.2)), 
+                url('website_header.jpg') center top/contain no-repeat;
     color: #fff;
     text-align: center;
     padding: 6rem 0 3rem 0;
     position: relative;
     box-shadow: 0 2px 16px rgba(44, 62, 80, 0.05);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
 }
+@media (max-width: 767px) {
+    .hero-section {
+        background-size: cover;
+        background-position: center;
+    }
+}
+
 .hero-section h1,
 .hero-section .lead,
 .hero-section .badge,
