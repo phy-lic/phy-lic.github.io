@@ -86,24 +86,16 @@ section {
 
 /* Hero section */
 .hero-section {
-    width: 100vw;
-    min-height: 380px;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
-    background: linear-gradient(rgba(30,42,60,0.3), rgba(30,42,60,0.2)), 
-                url('website_header.jpg') center center/cover no-repeat;
+    background: linear-gradient(rgba(30,42,60,0.2), rgba(30,42,60,0.1)),
+            url('website_header.jpg') center center/cover no-repeat;
+
     color: #fff;
     text-align: center;
     padding: 6rem 0 3rem 0;
     position: relative;
     box-shadow: 0 2px 16px rgba(44, 62, 80, 0.05);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
+
 .hero-inner {
     width: 100%;
     max-width: 700px;
