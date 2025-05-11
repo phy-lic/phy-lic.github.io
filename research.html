@@ -2,22 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Research - Rajarshi Giri</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google Fonts for academic look -->
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Open+Sans:wght@400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navbar (same as index.html, but highlight Research) -->
+  <!-- Navbar (same as your other pages) -->
   <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light fixed-top glass-nav">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="index.html">
         <img src="IISER-K_Logo.png" alt="IISER Kolkata Logo">
         Rajarshi Giri
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navContent">
@@ -37,27 +39,48 @@
     </div>
   </nav>
 
+  <!-- Hero Section -->
   <section class="hero-section">
     <div class="hero-inner text-center">
-      <h1 class="display-4 mb-2">Research Interests</h1>
-      <p class="lead mb-3">Quantum Physics, Condensed Matter, Computational Physics, Nonlinear Dynamics</p>
+      <h1 class="display-4 mb-2">Research</h1>
+      <p class="lead mb-3">Exploring the frontiers of physics, computation, and complex systems.</p>
     </div>
   </section>
 
-  <section class="fade-in">
-    <div class="container">
-      <h2 class="section-title">My Research</h2>
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <ul>
-            <li>Quantum Physics and Quantum Computing</li>
-            <li>Condensed Matter Physics</li>
-            <li>Computational Methods in Physics</li>
-            <li>Nonlinear Dynamics & Stochastic Processes</li>
-          </ul>
-          <p>
-            <!-- Add more detail about your research, papers, or interests here -->
-          </p>
+  <!-- Nilmani-style Research Section -->
+  <section class="fade-in" style="background: var(--section-alt); padding-top: 0;">
+    <div class="container" style="max-width: 800px; margin-top: 40px;">
+      <!-- Centered summary -->
+      <div class="summary">
+        <p>
+          My research interests lie at the interface of Quantum Physics, Computational Science, and Complex Systems. I am particularly fascinated by quantum information, condensed matter phenomena, and the use of high-performance computing to simulate and analyze physical systems.
+        </p>
+      </div>
+      <hr>
+      <div class="research-section">
+        <div class="research-topic">
+          <span class="topic-title">Quantum Physics & Quantum Computing:</span>
+          <span class="topic-desc">
+            Studying the fundamentals of quantum mechanics and quantum information. Interested in quantum algorithms, entanglement, and the simulation of quantum systems using both classical and quantum computers.
+          </span>
+        </div>
+        <div class="research-topic">
+          <span class="topic-title">Condensed Matter Physics:</span>
+          <span class="topic-desc">
+            Exploring the collective behavior of many-body systems, including phase transitions, superconductivity, and emergent phenomena in low-dimensional systems.
+          </span>
+        </div>
+        <div class="research-topic">
+          <span class="topic-title">Computational Physics:</span>
+          <span class="topic-desc">
+            Developing and applying computational methods to solve complex problems in physics, such as Monte Carlo simulations, numerical solutions of differential equations, and data analysis with Python and C++.
+          </span>
+        </div>
+        <div class="research-topic">
+          <span class="topic-title">Nonlinear Dynamics & Stochastic Processes:</span>
+          <span class="topic-desc">
+            Investigating systems governed by nonlinear interactions and randomness, including chaos theory, pattern formation, and stochastic modeling in natural sciences.
+          </span>
         </div>
       </div>
     </div>
