@@ -1,46 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Rajarshi Giri</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rajarshi Giri - Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Optional: Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body { background-color: #f8f9fa; }
+    .hero { background: #6c8ea4; color: white; padding: 3rem 0; text-align: center; }
+    .navbar { margin-bottom: 2rem; }
+    .section-title { margin-top: 2rem; margin-bottom: 1rem; font-weight: bold; }
+    .card { margin-bottom: 1.5rem; }
+    footer { background: #343a40; color: #fff; text-align: center; padding: 1rem 0; margin-top: 2rem; }
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      margin-bottom: 1rem;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Rajarshi Giri</h1>
-        <p>BS-MS Undergraduate at IISER Kolkata</p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#contact">Contact</a></li>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Rajarshi Giri</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#interests">Research Interests</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-    </nav>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <!-- Add your own photo here if you like -->
+      <!-- <img src="your-photo.jpg" alt="Rajarshi Giri" class="profile-pic"> -->
+      <h1 class="display-4">Rajarshi Giri</h1>
+      <p class="lead">BS-MS Undergraduate at IISER Kolkata</p>
+      <div>
+        <a href="mailto:your@email.com" class="btn btn-light btn-sm me-2"><i class="fas fa-envelope"></i> Email</a>
+        <a href="https://www.linkedin.com/in/yourusername" class="btn btn-light btn-sm me-2" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/phy-lic" class="btn btn-light btn-sm" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <!-- About Me -->
     <section id="about">
-        <h2>About Me</h2>
-        <p>Sophomore at IISER Kolkata.</p>
+      <h2 class="section-title">About Me</h2>
+      <p>
+        I am a sophomore at IISER Kolkata, passionate about physics, research, and technology. I enjoy exploring new scientific ideas and building innovative projects. 
+        <br>
+        <strong>Looking for research internships and collaborations!</strong>
+      </p>
     </section>
+
+    <!-- Research Interests -->
+    <section id="interests">
+      <h2 class="section-title">Research Interests</h2>
+      <ul>
+        <li>Quantum Physics and Quantum Computing</li>
+        <li>Condensed Matter Physics</li>
+        <li>Computational Methods in Physics</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
     <section id="projects">
-        <h2>Research Interests</h2>
-        <p>Highlight your areas of interest and ongoing research.</p>
+      <h2 class="section-title">Projects</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Quantum Simulations Toolkit</h5>
+              <p class="card-text">Developed a Python toolkit for simulating quantum systems using NumPy and Qiskit. Explored quantum entanglement and decoherence.</p>
+              <a href="https://github.com/phy-lic/quantum-sim" class="btn btn-primary btn-sm" target="_blank">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Monte Carlo Methods in Physics</h5>
+              <p class="card-text">Implemented Monte Carlo simulations for statistical physics problems, including the Ising model and random walks.</p>
+              <a href="https://github.com/phy-lic/monte-carlo-physics" class="btn btn-primary btn-sm" target="_blank">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+        <!-- Add more projects as needed -->
+      </div>
     </section>
+
+    <!-- Publications -->
     <section id="publications">
-        <h2>Publications</h2>
-        <ul>
-            <li>Your research paper title, journal/conference</li>
-            <li>Another publication...</li>
-        </ul>
+      <h2 class="section-title">Publications</h2>
+      <ul>
+        <li>
+          Giri, R., <i>et al.</i> "Title of Your Paper." <b>Journal Name</b>, Year.
+        </li>
+        <li>
+          Another publication or poster presentation...
+        </li>
+      </ul>
     </section>
+
+    <!-- Contact -->
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: your@email.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourusername">Your LinkedIn Profile</a></p>
+      <h2 class="section-title">Contact</h2>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:your@email.com">your@email.com</a></p>
+      <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a></p>
+      <p><i class="fab fa-github"></i> <a href="https://github.com/phy-lic" target="_blank">phy-lic</a></p>
     </section>
-    <footer>
-        <p>© 2024 Rajarshi Giri</p>
-    </footer>
+  </div>
+
+  <footer>
+    <div class="container">
+      &copy; 2025 Rajarshi Giri. All rights reserved.
+    </div>
+  </footer>
+  <!-- Bootstrap JS (for navbar toggle) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
