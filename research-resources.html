@@ -12,6 +12,42 @@
   <!-- Navbar (same as other pages, with Research dropdown) -->
   <!-- ... navbar code here ... -->
 
+  <!-- Navbar -->
+  <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light fixed-top glass-nav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="IISER-K_Logo.png" alt="IISER Kolkata Logo">
+        Rajarshi Giri
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="index.html">About</a></li>
+          <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="research.html" id="researchDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Research
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="researchDropdown">
+    <li><a class="dropdown-item" href="research-highlights.html">Highlights</a></li>
+    <li><a class="dropdown-item" href="research-resources.html">Resources</a></li>
+  </ul>
+</li>
+
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item">
+            <button id="darkModeToggle" class="btn btn-sm btn-outline-secondary ms-2" type="button" title="Toggle dark mode">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <section class="hero-section">
     <div class="hero-inner text-center">
       <h1 class="display-4 mb-2">Research Resources</h1>
