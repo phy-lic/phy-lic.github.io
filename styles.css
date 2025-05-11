@@ -190,3 +190,12 @@ body.dark-mode .icon-link:hover { color: #ffd700; }
 body.dark-mode .nav-link { color: #b2dfdb !important; }
 body.dark-mode .nav-link.active { color: #ffd700 !important; }
 body.dark-mode a { color: #ffd700; }
+
+
+.navbar-brand img {
+    height: 36px;
+    width: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
