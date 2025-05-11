@@ -72,6 +72,14 @@ section {
     letter-spacing: 0.5px;
     transition: color 0.2s;
 }
+.navbar-brand img {
+    height: 36px;
+    width: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+    max-width: 120px; /* Prevents logo from ever being too wide */
+}
+
 .nav-link.active, .nav-link:focus, .nav-link:hover {
     color: #2bbbad !important;
     font-weight: bold;
