@@ -1,7 +1,22 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap');
+
+/* Color Palette */
+:root {
+    --primary: #233554;
+    --accent: #2bbbad;
+    --background: #f6f9fc;
+    --section-alt: #ffffff;
+    --text: #222;
+    --heading: #233554;
+    --shadow: 0 4px 32px rgba(44,62,80,0.07);
+}
+
 /* General body styles */
 body {
-    font-family: 'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif;
-    background-color: #f4f7fa;
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -9,15 +24,15 @@ body {
 
 /* Glassmorphism Navbar */
 .glass-nav {
-    background: rgba(255,255,255,0.8) !important;
-    box-shadow: 0 2px 16px rgba(44, 62, 80, 0.05);
+    background: rgba(255,255,255,0.92) !important;
+    box-shadow: var(--shadow);
     backdrop-filter: blur(8px);
 }
 
 /* Section backgrounds for visual separation */
-#about { background: #f8fafc; }
-#interests { background: #e6f7f7; }
-#projects { background: #f7f8fa; }
+#about { background: var(--section-alt); }
+#interests { background: #f0f5fa; }
+#projects { background: var(--section-alt); }
 #blog { background: #f4f7fa; }
 #contact { background: #eaf6f6; }
 
@@ -29,11 +44,12 @@ section {
 
 /* Section titles */
 .section-title {
-    font-size: 2.2rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
-    color: #1e3a4c;
-    letter-spacing: 1px;
+    font-size: 2.3rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin-bottom: 2.2rem;
+    color: var(--primary);
+    letter-spacing: 0.02em;
     text-align: center;
 }
 
@@ -51,12 +67,13 @@ section {
     box-shadow: 0 8px 32px rgba(44,62,80,0.13);
 }
 .card-title {
-    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
 }
 
 /* Glassmorphism for cards */
 .glass-card {
-    background: rgba(255,255,255,0.85);
+    background: rgba(255,255,255,0.88);
     backdrop-filter: blur(6px);
 }
 
@@ -65,8 +82,9 @@ section {
     transition: background 0.4s;
 }
 .navbar-brand, .nav-link {
-    color: #1e3a4c !important;
-    font-weight: 500;
+    color: var(--primary) !important;
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 600;
     letter-spacing: 0.5px;
     transition: color 0.2s;
 }
@@ -78,7 +96,7 @@ section {
     max-width: 120px;
 }
 .nav-link.active, .nav-link:focus, .nav-link:hover {
-    color: #2bbbad !important;
+    color: var(--accent) !important;
     font-weight: bold;
     background: rgba(43,187,173,0.08);
     border-radius: 0.4rem;
@@ -86,32 +104,38 @@ section {
 
 /* Hero section */
 .hero-section {
-    background: linear-gradient(rgba(30,42,60,0.2), rgba(30,42,60,0.1)),
-            url('8635a657-c593-4944-90a7-4150dfc5fad3~1.jpg') center center/cover no-repeat;
-
+    width: 100vw;
+    min-height: 400px;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    background: linear-gradient(rgba(35,53,84,0.33), rgba(43,187,173,0.13)),
+                url('8635a657-c593-4944-90a7-4150dfc5fad3~1.jpg') center center/cover no-repeat;
     color: #fff;
     text-align: center;
-    padding: 6rem 0 3rem 0;
+    padding: 7rem 0 4rem 0;
     position: relative;
-    box-shadow: 0 2px 16px rgba(44, 62, 80, 0.05);
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-inner {
     width: 100%;
     max-width: 700px;
     margin: 0 auto;
-    background: rgba(30,42,60,0.08);
+    background: rgba(255,255,255,0.08);
     border-radius: 1.2rem;
     padding: 2.5rem 1rem 2rem 1rem;
-    box-shadow: 0 4px 32px rgba(44,62,80,0.07);
+    box-shadow: var(--shadow);
 }
+
 .hero-section h1,
 .hero-section .lead,
-.hero-section .badge,
 .hero-section a,
 .hero-section .icon-link {
     color: #fff !important;
-    text-shadow: 0 2px 8px rgba(30,42,60,0.4);
+    text-shadow: 0 2px 8px rgba(35,53,84,0.15);
 }
 
 /* IISER Kolkata logo in hero section */
@@ -128,7 +152,7 @@ section {
 }
 @media (max-width: 767px) {
     .hero-section {
-        min-height: 280px;
+        min-height: 260px;
         padding: 3rem 0 1.5rem 0;
     }
     .hero-logo {
@@ -146,14 +170,14 @@ section {
 
 /* Icon links */
 .icon-link {
-    color: #2bbbad;
-    margin-right: 1rem;
-    font-size: 1.3rem;
+    color: var(--accent);
+    margin-right: 1.2rem;
+    font-size: 1.4rem;
     transition: color 0.2s, transform 0.2s;
     display: inline-block;
 }
 .icon-link:hover {
-    color: #1e3a4c;
+    color: var(--primary);
     transform: scale(1.15);
 }
 
@@ -175,17 +199,18 @@ section {
     box-shadow: 0 2px 8px rgba(44,62,80,0.05);
     padding: 1.5rem 2rem;
     margin-bottom: 2rem;
-    border-left: 4px solid #2bbbad;
+    border-left: 4px solid var(--accent);
 }
 .blog-post h5 {
-    color: #1e3a4c;
-    font-weight: 600;
+    color: var(--primary);
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
 }
 
 /* Footer */
 footer {
     background: #f8fafc;
-    color: #2bbbad;
+    color: var(--accent);
     text-align: center;
     padding: 1.2rem 0 0.8rem 0;
     font-size: 1rem;
@@ -213,10 +238,10 @@ body.dark-mode .navbar,
 body.dark-mode footer {
     background: rgba(34, 40, 49, 0.95) !important;
     color: #b2dfdb !important;
-    border-top: 1px solid #2bbbad;
+    border-top: 1px solid var(--accent);
 }
 body.dark-mode .section-title {
-    color: #2bbbad !important;
+    color: var(--accent) !important;
 }
 body.dark-mode section {
     background: #232b2f !important;
@@ -228,8 +253,14 @@ body.dark-mode .blog-post {
     color: #e0e0e0 !important;
     box-shadow: 0 2px 16px rgba(44,62,80,0.13);
 }
-body.dark-mode .icon-link { color: #2bbbad; }
+body.dark-mode .icon-link { color: var(--accent); }
 body.dark-mode .icon-link:hover { color: #ffd700; }
 body.dark-mode .nav-link { color: #b2dfdb !important; }
 body.dark-mode .nav-link.active { color: #ffd700 !important; }
 body.dark-mode a { color: #ffd700; }
+
+/* Ensure hero-section background image is visible in dark mode */
+body.dark-mode .hero-section {
+    background: linear-gradient(rgba(35,53,84,0.33), rgba(43,187,173,0.13)),
+                url('8635a657-c593-4944-90a7-4150dfc5fad3~1.jpg') center center/cover no-repeat !important;
+}
