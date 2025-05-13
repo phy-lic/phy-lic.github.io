@@ -3,35 +3,38 @@ name: Jekyll Site CI/CD
 on:
   push:
     branches:
-      - main  # or your default branch, like 'master'
-  pull_request:
-    branches:
-      - main  # or your default branch, like 'master'
+      - main  # Change this to your default branch if necessary
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
+    # Step 1: Checkout the code
     - name: Checkout repository
       uses: actions/checkout@v2
     
+    # Step 2: Set up Ruby
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 2.7  # You can adjust the version to your needs
+        ruby-version: 2.7  # You can adjust the Ruby version if necessary
     
+    # Step 3: Install dependencies
     - name: Install dependencies
       run: |
         gem install bundler
-        bundle install
+        bundle install --path vendor/bundle  # Use a local path to install gems
     
+    # Step 4: Build the Jekyll site
     - name: Build the site
-      run: bundle exec jekyll build
+      run: |
+        bundle exec jekyll build
     
+    # Step 5: Deploy to GitHub Pages
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        branch: gh-pages  # Target branch for GitHub Pages
-        folder: _site    # Folder containing the Jekyll-generated site
+        branch: gh-pages  # Branch to deploy to
+        folder: _site     # Folder containing the built site
         token: ${{ secrets.GITHUB_TOKEN }}  # GitHub token for authentication
