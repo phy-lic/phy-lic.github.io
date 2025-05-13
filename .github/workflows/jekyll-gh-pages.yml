@@ -83,12 +83,32 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v3
-      - uses: actions/upload-pages-artifact@v2
+      # - uses: actions/checkout@v4
+      - uses: actions/upload-artifact@v4
+  with:
+    name: my-artifact-${{ matrix.os }}  # Use unique names if using matrix jobs
+    path: path/to/artifact
+
+      # - uses: actions/configure-pages@v3
+      - uses: actions/upload-artifact@v4
+  with:
+    name: my-artifact-${{ matrix.os }}  # Use unique names if using matrix jobs
+    path: path/to/artifact
+
+      # - uses: actions/upload-pages-artifact@v2
+      - uses: actions/upload-artifact@v4
+  with:
+    name: my-artifact-${{ matrix.os }}  # Use unique names if using matrix jobs
+    path: path/to/artifact
+
         with:
           path: './'
       - name: Deploy
         id: deployment
-        uses: actions/deploy-pages@v2
+        # uses: actions/deploy-pages@v2
+        - uses: actions/upload-artifact@v4
+  with:
+    name: my-artifact-${{ matrix.os }}  # Use unique names if using matrix jobs
+    path: path/to/artifact
+
 
