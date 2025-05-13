@@ -1,33 +1,37 @@
-name: Deploy static site to GitHub Pages
+name: Jekyll Site CI/CD
 
 on:
   push:
     branches:
-      - main  # or 'master', if that's your branch
-
-  workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+      - main  # or your default branch, like 'master'
+  pull_request:
+    branches:
+      - main  # or your default branch, like 'master'
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-
+    
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Copy files to output folder
-        run: |
-          mkdir -p public
-          cp -r * public/
-          rm -rf public/.git public/.github
-
-      - name: Deploy to GitHub Pages 🚀
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.7  # You can adjust the version to your needs
+    
+    - name: Install dependencies
+      run: |
+        gem install bundler
+        bundle install
+    
+    - name: Build the site
+      run: bundle exec jekyll build
+    
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: gh-pages  # Target branch for GitHub Pages
+        folder: _site    # Folder containing the Jekyll-generated site
+        token: ${{ secrets.GITHUB_TOKEN }}  # GitHub token for authentication
