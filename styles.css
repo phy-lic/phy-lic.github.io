@@ -149,6 +149,12 @@ a:hover, .nav-link:hover {
   display: inline-block;
 }
 
+.navbar-brand img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+
 /* Hover and focus */
 .main-nav .nav-link:hover,
 .main-nav .nav-link:focus {
