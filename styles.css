@@ -205,20 +205,98 @@ a {
     margin: 40px 0;
 }
 
-/* Research Interests */
-.research-interests {
-    max-width: 800px;
+/* --- Document Style Content Sections (About, Education, Research) --- */
+.content-section {
+    max-width: 850px; /* Constrains text width for better readability */
+    margin-bottom: 40px;
 }
 
-.research-interests h2 {
-    font-size: 28px;
-    font-weight: 500;
+.content-section h2 {
+    font-size: 26px;
+    font-weight: 600;
     margin-bottom: 20px;
+    color: #111;
+    border-bottom: 2px solid #333;
+    display: inline-block;
+    padding-bottom: 4px;
 }
 
-.research-interests p {
+.content-section p {
     margin-bottom: 15px;
+    color: #444;
+}
+
+/* --- List Items (Education, Experience) --- */
+.list-item {
+    margin-bottom: 30px;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 4px;
+}
+
+.item-title {
+    font-size: 18px;
+    color: var(--text-main);
+}
+
+.item-date {
+    font-size: 15px;
+    color: #666;
+    white-space: nowrap;
+}
+
+.item-subtitle {
+    font-style: italic;
     color: var(--text-light);
+    margin-bottom: 8px;
+}
+
+.item-desc {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* --- Research Specific Formatting --- */
+.research-item h3 {
+    font-family: Arial, sans-serif; /* Clean sans-serif for project titles */
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a4b84; /* Academic Blue */
+    margin-bottom: 4px;
+}
+
+.research-authors {
+    font-size: 16px;
+    margin-bottom: 2px !important;
+}
+
+.research-venue {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 10px !important;
+}
+
+.research-links {
+    margin-top: 10px;
+}
+
+.btn-link {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #1a4b84;
+    margin-right: 12px;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.btn-link:hover {
+    color: #000;
+    text-decoration: underline;
 }
 
 /* Footer */
@@ -250,5 +328,14 @@ footer {
     .affiliation-section {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .item-header {
+        flex-direction: column;
+    }
+    
+    .item-date {
+        font-size: 14px;
+        margin-top: 2px;
     }
 }
