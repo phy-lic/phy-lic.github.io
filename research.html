@@ -5,80 +5,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rajarshi Giri - Research</title>
   
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <nav id="mainNavbar" class="navbar simple-navbar">
-    <div class="container d-flex justify-content-between align-items-center flex-wrap">
-      <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="iiserk-logo.png" alt="IISER Kolkata Logo" style="height: 40px; margin-right: 10px;">
-        <span class="navbar-text site-title">Rajarshi Giri</span>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="iiserk-logo.png" alt="IISER Kolkata Logo" class="brand-logo">
+        <span class="brand-name">Rajarshi Giri</span>
       </a>
-      <ul class="nav main-nav d-flex flex-row">
-        <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="research.html" style="font-weight: bold; text-decoration: underline;">Research</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="research-highlights.html">Highlights</a></li>
-            <li><a class="dropdown-item" href="research-resources.html">Resources</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="projects.html">Academics</a></li>
-        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="research.html" style="font-weight: 600; text-decoration: underline;">Research</a></li>
+        <li><a href="projects.html">Academics</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <main class="container" style="max-width: 900px; margin-top: 50px; margin-bottom: 50px;">
+  <main class="main-content">
     
-    <h1 class="section-title text-center mb-5">Research & Projects</h1>
-    <p class="summary mb-5">
-      Exploring the frontiers of astrophysics, cosmology, and the interstellar medium through computational and theoretical methods.
-    </p>
-
-    <hr>
-
-    <div class="research-section mb-5">
-      <a href="project-computational-model.html" style="text-decoration: none;">
-        <h3 class="topic-title" style="color: #1a4b84;">Computational Modeling of [Specific Physics Topic]</h3>
-      </a>
-      <p class="mb-1"><strong>Rajarshi Giri</strong>, Collaborator Name, Professor Name</p>
-      <p class="text-muted mb-3"><em>Course Project / Independent Study &bull; Spring 2024</em></p>
-      <p class="topic-desc mb-3">
-        Developed a numerical simulation in Python to model [phenomenon]. Utilized Runge-Kutta methods to solve coupled differential equations and visualized phase space trajectories.
+    <section class="content-section" style="text-align: center; margin: 0 auto; max-width: 800px;">
+      <h2 style="border-bottom: none; font-size: 32px; margin-bottom: 10px;">Research & Projects</h2>
+      <p style="font-size: 20px; color: #555; font-style: italic;">
+        Exploring the frontiers of astrophysics, cosmology, and the interstellar medium through computational and theoretical methods.
       </p>
-      <div>
-        <a href="project-computational-model.html" class="icon-link" style="font-size: 1rem;">[Read More]</a>
-        <a href="#" class="icon-link" style="font-size: 1rem;">[GitHub Code]</a>
-      </div>
-    </div>
+    </section>
 
-    <div class="research-section mb-5">
-      <a href="project-theoretical-analysis.html" style="text-decoration: none;">
-        <h3 class="topic-title" style="color: #1a4b84;">Theoretical Analysis of [Another Topic]</h3>
-      </a>
-      <p class="mb-1"><strong>Rajarshi Giri</strong></p>
-      <p class="text-muted mb-3"><em>Term Paper &bull; Fall 2023</em></p>
-      <p class="topic-desc mb-3">
-        Investigated the boundary conditions of [concept] in low-dimensional systems. Derived analytical solutions using perturbation theory.
-      </p>
-      <div>
-        <a href="project-theoretical-analysis.html" class="icon-link" style="font-size: 1rem;">[Read More]</a>
+    <hr class="section-divider">
+
+    <section class="content-section" style="margin: 0 auto;">
+      
+      <div class="list-item research-item">
+        <a href="project-computational-model.html">
+          <h3 class="research-title">Computational Modeling of [Specific Physics Topic]</h3>
+        </a>
+        <p class="research-authors"><strong>Rajarshi Giri</strong>, Collaborator Name, Professor Name</p>
+        <p class="research-venue"><em>Course Project / Independent Study &bull; Spring 2024</em></p>
+        <p class="item-desc">
+          Developed a numerical simulation in Python to model [phenomenon]. Utilized Runge-Kutta methods to solve coupled differential equations and visualized phase space trajectories.
+        </p>
+        <div class="research-links">
+          <a href="project-computational-model.html" class="btn-link">[Read More]</a>
+          <a href="#" class="btn-link">[GitHub Code]</a>
+        </div>
       </div>
-    </div>
+
+      <div class="list-item research-item">
+        <a href="project-theoretical-analysis.html">
+          <h3 class="research-title">Theoretical Analysis of [Another Topic]</h3>
+        </a>
+        <p class="research-authors"><strong>Rajarshi Giri</strong></p>
+        <p class="research-venue"><em>Term Paper &bull; Fall 2023</em></p>
+        <p class="item-desc">
+          Investigated the boundary conditions of [concept] in low-dimensional systems. Derived analytical solutions using perturbation theory.
+        </p>
+        <div class="research-links">
+          <a href="project-theoretical-analysis.html" class="btn-link">[Read More]</a>
+        </div>
+      </div>
+
+    </section>
 
   </main>
 
   <footer>
-    <div class="container">
-      &copy; 2025 Rajarshi Giri. All rights reserved.
-    </div>
+    <p>&copy; 2026 Rajarshi Giri. All rights reserved.</p>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
