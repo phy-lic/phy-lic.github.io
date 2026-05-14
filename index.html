@@ -1,196 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rajarshi Giri - About</title>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navbar -->
-<!--   <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light fixed-top glass-nav">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="IISER-K_Logo.png" alt="IISER Kolkata Logo">
-        Rajarshi Giri
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link active" href="index.html">About</a></li>
-          <li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle" href="research.html" id="researchDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Research
-  </a>
-  <ul class="dropdown-menu" aria-labelledby="researchDropdown">
-    <li><a class="dropdown-item" href="research-highlights.html">Highlights</a></li>
-    <li><a class="dropdown-item" href="research-resources.html">Resources</a></li>
-  </ul>
-</li>
 
-          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <li class="nav-item">
-            <button id="darkModeToggle" class="btn btn-sm btn-outline-secondary ms-2" type="button" title="Toggle dark mode">
-              <i class="fas fa-moon"></i>
-            </button>
-          </li>
-        </ul>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="iiserk-logo.png" alt="IISER Kolkata Logo" class="brand-logo">
+        <span class="brand-name">Rajarshi Giri</span>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li class="dropdown">
+          <a href="research.html" class="dropdown-toggle">Research <i class="fas fa-chevron-down" style="font-size: 0.7em;"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="research-highlights.html">Highlights</a></li>
+            <li><a href="research-resources.html">Resources</a></li>
+          </ul>
+        </li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <p class="greeting">Hello, I'm</p>
+      <h1 class="hero-name">Rajarshi<br>Giri</h1>
+      <p class="hero-subtitle">Physics undergraduate at IISER Kolkata</p>
+      <p class="hero-desc">Exploring problems in theoretical and computational physics.</p>
+      
+      <div class="hero-socials">
+        <a href="mailto:rg23ms099@iiserkol.ac.in" title="Email"><i class="far fa-envelope"></i></a>
+        <a href="https://github.com/phy-lic" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/yourusername" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
-  </nav> -->
+  </header>
 
-
-<nav id="mainNavbar" class="navbar simple-navbar">
-  <div class="container d-flex justify-content-between align-items-center flex-wrap">
-    <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img src="iiserk-logo.png" alt="IISER Kolkata Logo" style="height: 40px; margin-right: 10px;">
-      <span class="navbar-text site-title">Rajarshi Giri</span>
-    </a>
-    <ul class="nav main-nav d-flex flex-row">
-      <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="research.html">Research</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="research-highlights.html">Highlights</a></li>
-          <li><a class="dropdown-item" href="research-resources.html">Resources</a></li>
-        </ul>
-      </li>
-      <li class="nav-item"><a class="nav-link" href="projects.html">Academics</a></li>
-      <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-</nav>
-
-
-<!-- Hero Section -->
-<section class="hero-section" id="hero">
-  <div class="hero-overlay"></div>
-
-  <div class="hero-content">
-    <p class="hero-greeting">Hello, I'm</p>
-
-    <h1 class="hero-name">Rajarshi Giri</h1>
-
-    <p class="hero-subtitle">
-      Physics undergraduate at IISER Kolkata
-    </p>
-
-    <p class="hero-description">
-      Exploring problems in theoretical and computational physics.
-    </p>
-
-    <div class="hero-links">
-      <a href="mailto:rg23ms099@iiserkol.ac.in" class="icon-link" title="Email">
-        <i class="fas fa-envelope"></i>
-      </a>
-
-      <a href="https://github.com/phy-lic" class="icon-link" target="_blank" title="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
-
-      <a href="https://www.linkedin.com/in/yourusername" class="icon-link" target="_blank" title="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </div>
-  </div>
-</section>
-
-  <!-- About Section -->
-  <!-- <section id="about" class="fade-in">
-    <div class="container">
-      <h2 class="section-title">About Me</h2>
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <p>
-            Hi There !!! I’m a Physics Major at Indian Institute of Science Education and Research (IISER), Kolkata.
-          </p>
-          <p>
-            <strong>This Website is always under construction :) </strong>
-          </p> -->
-<!--           <div class="mt-4">
-            <a href="cv.pdf" class="btn btn-outline-primary btn-lg" download>
-              <i class="fas fa-file-pdf"></i> Download CV
-            </a>
-          </div> -->
-        <!-- </div>
+  <main class="main-content">
+    
+    <section class="affiliation-section">
+      <div class="affiliation-info">
+        <address>
+          <em>Department of Physical Sciences</em><br>
+          <em>Indian Institute of Science Education and Research Kolkata</em><br>
+          Campus Road, Mohanpur, 741246, India
+        </address>
+        <p class="contact-line"><strong>Email:</strong> rg23ms099@iiserkol.ac.in</p>
+        <p class="contact-line"><strong>GitHub:</strong> github.com/phy-lic</p>
       </div>
-    </div>
-  </section> -->
-
-  <section id="about" class="fade-in">
-  <div class="container">
-    <h2 class="section-title">Research Interests</h2>
-
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-
-        <div class="academic-info">
-          <p>Email: rg23ms099@iiserkol.ac.in</p>
-          <p>GitHub: github.com/phy-lic</p>
-        </div>
-
-        <p>
-          Placeholder paragraph for broad research interests.
-          This section can later contain your evolving interests
-          in statistical mechanics, computational physics,
-          field theory, and related areas.
-        </p>
-
-        <p>
-          Placeholder paragraph for previous projects,
-          collaborations, internships, or current research directions.
-        </p>
-
+      
+      <div class="affiliation-logos">
+        <img src="iiserk-logo.png" alt="IISER Kolkata Logo">
+        <img src="dept-logo.png" alt="Department of Physical Sciences Logo" style="border-left: 1px solid #ddd; padding-left: 20px; margin-left: 20px;">
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-  <section id="current-work" class="fade-in">
-  <div class="container">
-    <h2 class="section-title">Current Work</h2>
+    <hr class="section-divider">
 
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
+    <section class="research-interests">
+      <h2>Research Interests</h2>
+      <p>My interests lie in theoretical and computational physics, with a focus on statistical mechanics, field theory, and mathematical methods in physics.</p>
+      <p>I enjoy building models, developing numerical tools, and understanding complex systems from first principles.</p>
+    </section>
 
-        <p>• Placeholder text for current reading or research direction.</p>
-
-        <p>• Placeholder text for ongoing computational or theoretical work.</p>
-
-        <p>• Placeholder text for collaborations, internships, or upcoming projects.</p>
-
-      </div>
-    </div>
-  </div>
-</section>
+  </main>
 
   <footer>
-    <div class="container">
-      &copy; 2025 Rajarshi Giri. All rights reserved.
-    </div>
+    <p>&copy; 2026 Rajarshi Giri. All rights reserved.</p>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // Dark mode toggle
-    const toggle = document.getElementById('darkModeToggle');
-    toggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
-    });
-    if(localStorage.getItem('darkMode') === 'true') {
-      document.body.classList.add('dark-mode');
-    }
-  </script>
 </body>
 </html>
