@@ -265,7 +265,7 @@ a:hover, .nav-link:hover {
 
 /* ================= HERO SECTION ================= */
 
-.hero-section {
+/* .hero-section {
     position: relative;
     width: 100vw;
     height: 80vh;
@@ -277,6 +277,31 @@ a:hover, .nav-link:hover {
         radial-gradient(circle at center,
         rgba(0,0,0,0.08) 0%,
         rgba(0,0,0,0.58) 100%),
+
+        url('8635a657-c593-4944-90a7-4150dfc5fad3~1.jpg')
+        center center/cover no-repeat;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+} */
+
+.hero-section {
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+
+    background:
+        linear-gradient(
+            to right,
+            rgba(0,0,0,0.42) 0%,
+            rgba(0,0,0,0.16) 38%,
+            rgba(0,0,0,0.08) 100%
+        ),
 
         url('8635a657-c593-4944-90a7-4150dfc5fad3~1.jpg')
         center center/cover no-repeat;
