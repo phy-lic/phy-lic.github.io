@@ -2,117 +2,84 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Blog - Rajarshi Giri</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rajarshi Giri - Blog</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navbar (copy from your other pages) -->
-<!--   <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light fixed-top glass-nav">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="IISER-K_Logo.png" alt="IISER Kolkata Logo">
-        Rajarshi Giri
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="iiserk-logo.png" alt="IISER Kolkata Logo" class="brand-logo">
+        <span class="brand-name">Rajarshi Giri</span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link active" href="index.html">About</a></li>
-          <li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle" href="research.html" id="researchDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Research
-  </a>
-  <ul class="dropdown-menu" aria-labelledby="researchDropdown">
-    <li><a class="dropdown-item" href="research-highlights.html">Highlights</a></li>
-    <li><a class="dropdown-item" href="research-resources.html">Resources</a></li>
-  </ul>
-</li>
-          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-          <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <li class="nav-item">
-            <button id="darkModeToggle" class="btn btn-sm btn-outline-secondary ms-2" type="button" title="Toggle dark mode">
-              <i class="fas fa-moon"></i>
-            </button>
-          </li>
-        </ul>
-      </div>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="projects.html">Academics</a></li>
+        <li><a href="blog.html" style="font-weight: 600; text-decoration: underline;">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </div>
-  </nav> -->
+  </nav>
 
-<nav id="mainNavbar" class="navbar simple-navbar">
-  <div class="container d-flex justify-content-between align-items-center flex-wrap">
-    <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img src="iiserk-logo.png" alt="IISER Kolkata Logo" style="height: 40px; margin-right: 10px;">
-      <span class="navbar-text site-title">Rajarshi Giri</span>
-    </a>
-    <ul class="nav main-nav d-flex flex-row">
-      <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="research.html">Research</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="research-highlights.html">Highlights</a></li>
-          <li><a class="dropdown-item" href="research-resources.html">Resources</a></li>
-        </ul>
-      </li>
-      <li class="nav-item"><a class="nav-link" href="projects.html">Academics</a></li>
-      <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-</nav>
+  <main class="main-content">
+    
+    <section class="content-section" style="text-align: center; margin: 0 auto; max-width: 800px; padding-top: 20px;">
+      <h2 style="border-bottom: none; font-size: 32px; margin-bottom: 10px;">Blog</h2>
+      <p style="font-size: 20px; color: #555; font-style: italic;">
+        My thoughts, experiences, and academic updates.
+      </p>
+    </section>
 
+    <hr class="section-divider">
 
-  <section class="hero-section">
-    <div class="hero-inner text-center">
-      <h1 class="display-4 mb-2">Blog</h1>
-      <p class="lead mb-3">My thoughts, experiences, and updates</p>
-    </div>
-  </section>
+    <section class="content-section" style="margin: 0 auto;">
+      
+      <h2 style="margin-bottom: 25px;">Recent Posts</h2>
 
-  <section class="fade-in">
-    <div class="container">
-      <h2 class="section-title">Recent Posts</h2>
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <article class="blog-post mb-4">
-            <h5>
-              <a href="blog-post-1.html">My Summer Research Experience (May 2025)</a>
-            </h5>
-            <p class="text-muted">May 15, 2025</p>
-            <p>I spent this summer working on quantum simulations at IISER Kolkata. I learned a lot about Qiskit and met some amazing people...</p>
-          </article>
-          <article class="blog-post mb-4">
-            <h5>
-              <a href="blog-post-2.html">Why I Love Physics</a>
-            </h5>
-            <p class="text-muted">April 10, 2025</p>
-            <p>Physics helps me see the world differently. From quantum weirdness to the beauty of classical mechanics, every topic fascinates me...</p>
-          </article>
+      <div class="list-item">
+        <div class="item-header">
+          <strong class="item-title" style="font-size: 20px;">My Summer Research Experience (May 2025)</strong>
+          <span class="item-date">May 15, 2025</span>
+        </div>
+        <p class="item-desc" style="margin-top: 10px;">
+          I spent this summer working on quantum simulations at IISER Kolkata. I learned a lot about Qiskit and met some amazing people...
+        </p>
+        <div class="research-links" style="margin-top: 15px;">
+          <a href="blog-post-1.html" class="btn-link">Read Post &rarr;</a>
         </div>
       </div>
-    </div>
-  </section>
+
+      <div class="list-item">
+        <div class="item-header">
+          <strong class="item-title" style="font-size: 20px;">Why I Love Physics</strong>
+          <span class="item-date">April 10, 2025</span>
+        </div>
+        <p class="item-desc" style="margin-top: 10px;">
+          Physics helps me see the world differently. From quantum weirdness to the beauty of classical mechanics, every topic fascinates me...
+        </p>
+        <div class="research-links" style="margin-top: 15px;">
+          <a href="blog-post-2.html" class="btn-link">Read Post &rarr;</a>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
 
   <footer>
-    <div class="container">
-      &copy; 2025 Rajarshi Giri. All rights reserved.
-    </div>
+    <p>&copy; 2026 Rajarshi Giri. All rights reserved.</p>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    const toggle = document.getElementById('darkModeToggle');
-    toggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
-    });
-    if(localStorage.getItem('darkMode') === 'true') {
-      document.body.classList.add('dark-mode');
-    }
-  </script>
+
 </body>
 </html>
