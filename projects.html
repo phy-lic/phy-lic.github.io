@@ -3,154 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Academics - Rajarshi Giri</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Rajarshi Giri - Academics</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navbar (same as index.html, but highlight Academics) -->
-<!--   <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light fixed-top glass-nav">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="IISER-K_Logo.png" alt="IISER Kolkata Logo">
-        Rajarshi Giri
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="iiserk-logo.png" alt="IISER Kolkata Logo" class="brand-logo">
+        <span class="brand-name">Rajarshi Giri</span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link active" href="index.html">About</a></li>
-          <li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle" href="research.html" id="researchDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Research
-  </a>
-  <ul class="dropdown-menu" aria-labelledby="researchDropdown">
-    <li><a class="dropdown-item" href="research-highlights.html">Highlights</a></li>
-    <li><a class="dropdown-item" href="research-resources.html">Resources</a></li>
-  </ul>
-</li>
-          <li class="nav-item"><a class="nav-link active" href="projects.html">Academics</a></li>
-          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <li class="nav-item">
-            <button id="darkModeToggle" class="btn btn-sm btn-outline-secondary ms-2" type="button" title="Toggle dark mode">
-              <i class="fas fa-moon"></i>
-            </button>
-          </li>
-        </ul>
-      </div>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="projects.html" style="font-weight: 600; text-decoration: underline;">Academics</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </div>
-  </nav> -->
+  </nav>
 
-<nav id="mainNavbar" class="navbar simple-navbar">
-  <div class="container d-flex justify-content-between align-items-center flex-wrap">
-    <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img src="iiserk-logo.png" alt="IISER Kolkata Logo" style="height: 40px; margin-right: 10px;">
-      <span class="navbar-text site-title">Rajarshi Giri</span>
-    </a>
-    <ul class="nav main-nav d-flex flex-row">
-      <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="research.html">Research</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="research-highlights.html">Highlights</a></li>
-          <li><a class="dropdown-item" href="research-resources.html">Resources</a></li>
-        </ul>
-      </li>
-      <li class="nav-item"><a class="nav-link" href="projects.html">Academics</a></li>
-      <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-</nav>
+  <main class="main-content">
+    
+    <section class="content-section" style="text-align: center; margin: 0 auto; max-width: 800px; padding-top: 20px;">
+      <h2 style="border-bottom: none; font-size: 32px; margin-bottom: 10px;">Academics & Coursework</h2>
+      <p style="font-size: 20px; color: #555; font-style: italic;">
+        A collection of my academic notes, coursework, and personal projects.
+      </p>
+    </section>
 
+    <hr class="section-divider">
 
+    <section class="content-section" style="margin: 0 auto;">
+      
+      <h2 style="margin-bottom: 25px;">Course Notes</h2>
 
-
-  
-  <section class="hero-section">
-    <div class="hero-inner text-center">
-      <h1 class="display-4 mb-2">Academics</h1>
-      <p class="lead mb-3">A selection of my academic and personal projects</p>
-    </div>
-  </section>
-<!---------------------------------------------------------------------------------------------------->
-
-  
-  <section class="fade-in">
-  <div class="container">
-    <h2 class="section-title">My Notes</h2>
-    <div class="row g-4">
-      <!-- Project 1 -->
-      <div class="col-md-6">
-        <div class="card h-100 glass-card">
-<!--           <img src="project1.jpg" class="card-img-top" alt="Spring 2025 (Semester 4)" style="cursor:pointer"
-               data-bs-toggle="modal" data-bs-target="#project1Modal"> -->
-          <div class="card-body">
-            <h5 class="card-title">Spring 2025 (Semester 4)</h5>
-            <p class="card-text">All Notes</p>
-            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#project1Modal">Learn More</button>
-          </div>
+      <div class="list-item">
+        <div class="item-header">
+          <strong class="item-title" style="font-size: 20px;">Spring 2025 (Semester 4)</strong>
+        </div>
+        <p class="item-desc" style="margin-top: 10px;">
+          Comprehensive notes and study materials covering all coursework for this semester.
+        </p>
+        <div class="research-links" style="margin-top: 15px;">
+          <a href="https://drive.google.com/..." class="btn-link" target="_blank">
+            <i class="fab fa-google-drive"></i> [Google Drive Folder]
+          </a>
         </div>
       </div>
-      <!-- Project 2 -->
-      <div class="col-md-6">
-        <div class="card h-100 glass-card">
-<!--           <img src="project2.jpg" class="card-img-top" alt="Autumn 2025 (Semester 3)" style="cursor:pointer"
-               data-bs-toggle="modal" data-bs-target="#project2Modal"> -->
-          <div class="card-body">
-            <h5 class="card-title">Autumn 2025 (Semester 3)</h5>
-            <p class="card-text">All Notes</p>
-            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#project2Modal">Learn More</button>
-          </div>
+
+      <div class="list-item">
+        <div class="item-header">
+          <strong class="item-title" style="font-size: 20px;">Autumn 2024 (Semester 3)</strong>
+        </div>
+        <p class="item-desc" style="margin-top: 10px;">
+          Comprehensive notes and study materials covering all coursework for this semester.
+        </p>
+        <div class="research-links" style="margin-top: 15px;">
+          <a href="#" class="btn-link" target="_blank">
+            <i class="fab fa-google-drive"></i> [Google Drive Folder]
+          </a>
         </div>
       </div>
-    </div>
-  </div>
-</section>
 
+    </section>
+
+  </main>
 
   <footer>
-    <div class="container">
-      &copy; 2025 Rajarshi Giri. All rights reserved.
-    </div>
+    <p>&copy; 2026 Rajarshi Giri. All rights reserved.</p>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    const toggle = document.getElementById('darkModeToggle');
-    toggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
-    });
-    if(localStorage.getItem('darkMode') === 'true') {
-      document.body.classList.add('dark-mode');
-    }
-  </script>
-  <!-- Project 1 Modal -->
-<div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="project1ModalLabel">Spring 2025 (Semester 4)</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-<!--         <img src="project1.jpg" class="img-fluid mb-3" alt="Spring 2025 (Semester 4)"> -->
-        <p>
-          All Notes of this semester. with gdrive link.
-        </p>
-        <a href="https://github.com/phy-lic/quantum-sim" class="btn btn-outline-primary" target="_blank">View on Google Drive</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
-  
 </html>
