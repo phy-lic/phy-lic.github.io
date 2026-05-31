@@ -321,12 +321,19 @@
     .project-image {
       flex: 0 0 28%; /* Slightly narrower images so text has more room */
     }
+
     .project-image img {
-      width: 100%;
-      border-radius: 4px; /* Slightly sharper corners for a cleaner look */
-      border: 1px solid #d0d7de;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-    }
+  width: 100%;
+  aspect-ratio: 16 / 10; /* Forces a landscape shape (adjust to 3/2 or 16/9 if you prefer) */
+  object-fit: cover;     /* Crops the image cleanly to fit the box without distorting/squishing */
+  object-position: center; /* Centers the crop so the middle of the plot is always visible */
+  
+  border-radius: 4px;
+  border: 1px solid #d0d7de;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+    
+
     
     /* Smaller, More Refined Typography */
     .project-text {
@@ -439,11 +446,11 @@
         <img src="https://github.com/user-attachments/assets/e4e9b40c-b23a-42f6-8eb6-9b4a7afdd68e" alt="Bose-Hubbard Chaos plot">
       </div>
       <div class="project-text">
-        <h3 class="project-title">Regular-to-Chaotic Crossover in Kicked Interacting Bosons</h3>
+        <h3 class="project-title">Regular-to-Chaotic Crossover in Kicked Bose-Hubbard Dimer</h3>
         <!-- <div class="project-authors"><strong>Rajarshi Giri</strong>, Supervisor : Sayan Choudhury</div> -->
         <!-- <div class="project-venue">Research Project &bull; 2026</div> -->
         <p class="project-desc">
-          Analyzed the structural transition from regular integrable dynamics to quantum chaotic behavior within interacting bosonic profiles, modeled computationally via a kicked Bose-Hubbard dimer.
+          Analyzed the transition of regular integrable dynamics to quantum chaotic behavior in an interacting bosonic system using a kicked Bose-Hubbard dimer model.
         </p>
         <div class="project-links">
           <a href="#">Code</a> &nbsp;/&nbsp; <a href="#">Report</a>
@@ -460,7 +467,7 @@
         <!-- <div class="project-authors"><strong>Rajarshi Giri</strong>, Sayan Choudhury</div> -->
         <!-- <div class="project-venue">Research Project &bull; 2026</div> -->
         <p class="project-desc">
-          Studied the localized-to-coherent/superfluid-like crossover conditions within a two-site disordered Bose-Hubbard framework under the competitive interplay of on-site interactions and finite-temperature fluctuations.
+          Studied the localized-to-coherent/superfluid-like crossover phenomena within a two-site disordered Bose-Hubbard framework under the competitive interplay of on-site interactions and effects of finite-temperature on it.
         </p>
         <div class="project-links">
           <a href="https://phy-lic.github.io/disordered-bose-hubbard/disordered_BH_presentation_for_gh.pdf" target="_blank">Presentation</a>
@@ -477,7 +484,7 @@
         <!-- <div class="project-authors"><strong>Rajarshi Giri</strong>, Padmanath Madanagopalan</div> -->
         <!-- <div class="project-venue">Research Project &bull; Summer 2025</div> -->
         <p class="project-desc">
-          Conducted Monte Carlo simulations of free real scalar field theory ($2+1$D) to evaluate large-time two-point correlation functions encoding the particle mass spectrum. To resolve severe statistical noise scaling at large temporal separations, implemented a variance reduction method built on the exact analytical distribution of bilocal correlation functions, successfully optimizing plateau estimation for cleaner mass extraction.
+          We studied the signal-to-noise problem in large-time correlation functions of lattice scalar field theory. Using the analytically known distribution of bilocal correlators, we implemented a variance-reduction method that improves the extraction of effective masses from Monte Carlo simulations.
         </p>
         <div class="project-links">
           <a href="https://github.com/phy-lic/lattice-field-simulations" target="_blank">Code</a> &nbsp;/&nbsp; 
@@ -491,11 +498,11 @@
         <img src="https://github.com/user-attachments/assets/cf4f12d0-a3cc-4009-8d6d-ccc9098da071" alt="Dark matter halo profiling">
       </div>
       <div class="project-text">
-        <h3 class="project-title">Analytical Modelling of Intracluster Gas and Structure Formation</h3>
+        <h3 class="project-title">Theoretical Modelling of Gas Properties in Dark Matter Halos</h3>
         <!-- <div class="project-authors"><strong>Rajarshi Giri</strong>, Priyanka Singh</div> -->
         <!-- <div class="project-venue">Theoretical Cosmology Review Project</div> -->
         <p class="project-desc">
-          Reproduced the Komatsu–Seljak model of intracluster gas within dark matter halos to derive universal gas density and temperature profiles assuming hydrostatic equilibrium and a polytropic equation of state. Additionally simulated the analytical Press–Schechter model of hierarchical structure formation to compute the resulting dark matter halo mass function across cosmological timeline parameters.
+          Reproduced the Komatsu–Seljak model of intracluster gas in dark matter halos. Derived universal gas density and temperature profiles from hydrostatic equilibrium assumption and a polytropic equation of state. Additionally reproduced the Press–Schechter model of hierarchical structure formation and the resulting dark matter halo mass function. Investigated its dependence on cosmological parameters and cosmic time.
         </p>
         <div class="project-links">
           <a href="https://github.com/phy-lic/dark-matter-gas-profile/psingh_work_draft.pdf" target="_blank">Report</a> &nbsp;/&nbsp; 
@@ -509,11 +516,11 @@
         <img src="https://github.com/user-attachments/assets/2531544d-8f0e-4c6e-8cd3-0f251dcd5bf0" alt="Quantum Entanglement Qiskit">
       </div>
       <div class="project-text">
-        <h3 class="project-title">Quantum Entanglement as a Computational and Cryptographic Resource</h3>
+        <h3 class="project-title">Quantum Entanglement as a Resource</h3>
         <!-- <div class="project-authors"><strong>Rajarshi Giri</strong></div> -->
         <div class="project-venue">Term Paper for Advanced Quantum Mechanics course</div>
         <p class="project-desc">
-          Reviewed foundational mechanics of quantum entanglement as a nonclassical resource. Implemented concrete protocols including Superdense Coding, Quantum Teleportation, and Quantum Key Distribution (BB84/E91 architectures) programmatically via Qiskit on real IBM Quantum processing hardware.
+          In this project, we review the conceptual foundations of quantum entanglement and its role as a nonclassical resource in communication and cryptography. We then demonstrate its practical applications through Superdense Coding, Quantum Teleportation and Quantum Key Distribution (BB84 and E91) using Qiskit and IBM Quantum hardware.
         </p>
         <div class="project-links">
           <a href="https://github.com/phy-lic/entanglement-as-resource/sourin_term_paper_for_gh.pdf" target="_blank">Report</a> &nbsp;/&nbsp; 
