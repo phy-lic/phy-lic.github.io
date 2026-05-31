@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -75,6 +75,210 @@
       </div>
 
     </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Rajarshi Giri. All rights reserved.</p>
+  </footer>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rajarshi Giri - Research</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* Jon Barron-style Responsive Layout 
+      You can move this into your styles.css later!
+    */
+    .research-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .research-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+    .research-image {
+      flex: 0 0 35%; /* Takes up 35% of the width */
+    }
+    .research-image img {
+      width: 100%;
+      border-radius: 6px;
+      border: 1px solid #d0d7de;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .research-text {
+      flex: 1; /* Takes up the remaining 65% */
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .research-text p {
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+    .research-title {
+      font-size: 22px;
+      font-weight: 600;
+      margin: 0 0 5px 0;
+    }
+    .research-meta {
+      font-size: 17px;
+      color: #444;
+      margin-bottom: 12px;
+    }
+    .research-links a {
+      font-weight: 600;
+      text-decoration: none;
+      color: #0366d6;
+    }
+    .research-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Stack on smaller screens (Mobile devices) */
+    @media (max-width: 768px) {
+      .research-row {
+        flex-direction: column;
+        gap: 15px;
+      }
+      .research-image {
+        flex: 100%;
+        max-width: 80%;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="iiserk-logo.png" alt="IISER Kolkata Logo" class="brand-logo">
+        <span class="brand-name">Rajarshi Giri</span>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="research.html" style="font-weight: 600; text-decoration: underline;">Research</a></li>
+        <li><a href="projects.html">Academics</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main-content research-container">
+    
+    <section class="content-section" style="text-align: center; margin-bottom: 40px;">
+      <h2 style="border-bottom: none; font-size: 32px; margin-bottom: 10px;">Research & Major Projects</h2>
+      <p style="font-size: 20px; color: #555; font-style: italic;">
+        Focusing on the nonequilibrium quantum dynamics of interacting lattice systems.
+      </p>
+    </section>
+
+    <div class="research-row">
+      <div class="research-image">
+        <img src="https://github.com/user-attachments/assets/e4e9b40c-b23a-42f6-8eb6-9b4a7afdd68e" alt="bosons3 plot">
+      </div>
+      <div class="research-text">
+        <h3 class="research-title">Driven Dissipative Many-Body Systems</h3>
+        <div class="research-meta">
+          <em>Visiting Student (VSP 2026)</em> | <a href="http://www.hri.res.in/"><strong>Harish-Chandra Research Institute (HRI)</strong></a><br>
+          <strong>Guide:</strong> <em><a href="https://sites.google.com/cornell.edu/sayan">Dr. Sayan Choudhury</a></em>
+        </div>
+        <p>Currently working on driven dissipative many body systems. This includes two primary sub-projects:</p>
+        <p>
+          <strong>Project 1:</strong> Investigated the enhancement of the coherent/superfluid-like regime in a <em>two-site disordered Bose-Hubbard model</em> in the presence of interactions and finite temperature effects. <br>
+          <strong>Project 2:</strong> Studied the regular-to-chaotic crossover in an interacting bosonic system using a <em>kicked Bose-Hubbard dimer model</em>.
+        </p>
+        <div class="research-links">
+          <a href="https://phy-lic.github.io/disordered-bose-hubbard/disordered_BH_presentation_for_gh.pdf" target="_blank">Presentation</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="research-row">
+      <div class="research-image">
+        <img src="https://github.com/user-attachments/assets/ffe23d3d-b528-43cc-9128-3864dbc0175a" alt="imsc plot gh">
+      </div>
+      <div class="research-text">
+        <h3 class="research-title">Variance Reduction in Large Time Correlations in Scalar Field Theory</h3>
+        <div class="research-meta">
+          <em>Summer Research Intern (SRP 2025)</em> | <a href="https://www.imsc.res.in/"><strong>Institute of Mathematical Sciences (IMSc)</strong></a><br>
+          <strong>Guide:</strong> <em><a href="https://www.imsc.res.in/~padmanath/index.html#/">Dr. Padmanath Madanagopalan</a></em>
+        </div>
+        <p>
+          We studied the signal-to-noise problem in large-time correlation functions of lattice scalar field theory. Using the analytically known distribution of bilocal correlators, we implemented a variance-reduction method that improves the extraction of effective masses from Monte Carlo simulations.
+        </p>
+        <div class="research-links">
+          <a href="https://phy-lic.github.io/phi4-lattice-simulation/IMSc_report_for_gh.pdf" target="_blank">Report</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="research-row">
+      <div class="research-image">
+        <img src="https://github.com/user-attachments/assets/cf4f12d0-a3cc-4009-8d6d-ccc9098da071" alt="psingh plot">
+      </div>
+      <div class="research-text">
+        <h3 class="research-title">Theoretical Modelling of Gas Properties in Dark Matter Halos</h3>
+        <div class="research-meta">
+          <em>Remote Project Student</em> | <a href="https://www.iiti.ac.in/"><strong>Indian Institute of Technology (IIT), Indore</strong></a><br>
+          <strong>Guide:</strong> <em><a href="https://sites.google.com/iiti.ac.in/priyanka-singh">Dr. Priyanka Singh</a></em>
+        </div>
+        <p>
+          Worked on a review project focusing on theoretical modelling in cosmology:
+        </p>
+        <p>
+          • Reproduced the Komatsu–Seljak model of intracluster gas in dark matter halos. Derived universal gas density and temperature profiles from hydrostatic equilibrium assumption and a polytropic equation of state. <br>
+          • Reproduced the Press–Schechter model of hierarchical structure formation and the resulting dark matter halo mass function, investigating its dependence on cosmological parameters and cosmic time.
+        </p>
+        <div class="research-links">
+          <a href="https://github.com/phy-lic/dark-matter-gas-profile/psingh_work_draft.pdf" target="_blank">Report</a> &nbsp;/&nbsp; 
+          <a href="https://github.com/phy-lic/dark-matter-gas-profile/psingh_psmf.pdf" target="_blank">Notes</a>
+        </div>
+      </div>
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid #eaecef; margin: 40px 0;">
+
+    <section class="content-section" style="text-align: center; margin-bottom: 40px;">
+      <h2 style="border-bottom: none; font-size: 30px; margin-bottom: 10px;">Course Projects</h2>
+    </section>
+
+    <div class="research-row">
+      <div class="research-image">
+        <img src="https://github.com/user-attachments/assets/2531544d-8f0e-4c6e-8cd3-0f251dcd5bf0" alt="quantum entanglement plots">
+      </div>
+      <div class="research-text">
+        <h3 class="research-title">Entanglement as a Resource</h3>
+        <p>
+          In this project, we review the conceptual foundations of quantum entanglement and its role as a nonclassical resource in communication and cryptography. We then demonstrate its practical applications through Superdense Coding, Quantum Teleportation and Quantum Key Distribution (BB84 and E91) using Qiskit and IBM Quantum hardware.
+        </p>
+        <div class="research-links">
+          <a href="https://github.com/phy-lic/entanglement-as-resource/sourin_term_paper_for_gh.pdf" target="_blank">Report</a> &nbsp;/&nbsp; 
+          <a href="https://github.com/phy-lic/entanglement-as-resource/sourin_term_paper_presentation.pdf" target="_blank">Presentation</a>
+        </div>
+      </div>
+    </div>
 
   </main>
 
