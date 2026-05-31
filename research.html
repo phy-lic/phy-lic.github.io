@@ -306,34 +306,36 @@
   <link rel="stylesheet" href="styles.css">
 
   <style>
-    /* Responsive Project-Only Grid Style */
+    /* Wider Container & Cleaner Grid */
     .research-container {
-      max-width: 900px;
+      max-width: 1050px; /* Expanded from 900px to reduce side whitespace */
       margin: 0 auto;
       padding: 20px;
     }
     .project-row {
       display: flex;
       align-items: flex-start;
-      gap: 32px;
-      margin-bottom: 45px;
+      gap: 30px;
+      margin-bottom: 40px;
     }
     .project-image {
-      flex: 0 0 32%; /* Standard Jon Barron / Sajag style ratio */
+      flex: 0 0 28%; /* Slightly narrower images so text has more room */
     }
     .project-image img {
       width: 100%;
-      border-radius: 6px;
+      border-radius: 4px; /* Slightly sharper corners for a cleaner look */
       border: 1px solid #d0d7de;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     }
+    
+    /* Smaller, More Refined Typography */
     .project-text {
       flex: 1;
-      font-size: 18.5px;
-      line-height: 1.6;
+      font-size: 16px; /* Reduced from 18.5px */
+      line-height: 1.5;
     }
     .project-title {
-      font-size: 22px;
+      font-size: 19px; /* Reduced from 22px */
       font-weight: 600;
       margin: 0 0 4px 0;
       color: #111;
@@ -346,15 +348,15 @@
       color: #0366d6;
     }
     .project-authors {
-      font-size: 16.5px;
+      font-size: 15px; /* Reduced from 16.5px */
       color: #444;
-      margin-bottom: 4px;
+      margin-bottom: 3px;
     }
     .project-venue {
-      font-size: 16px;
+      font-size: 14px; /* Reduced from 16px */
       color: #666;
       font-style: italic;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
     .project-desc {
       margin-top: 0;
@@ -362,7 +364,7 @@
       color: #333;
     }
     .project-links {
-      font-size: 16.5px;
+      font-size: 15px; /* Reduced from 16.5px */
       font-weight: 600;
     }
     .project-links a {
@@ -381,7 +383,7 @@
       }
       .project-image {
         flex: 100%;
-        max-width: 75%;
+        max-width: 85%;
         margin: 0 auto;
       }
     }
@@ -408,9 +410,9 @@
 
   <main class="main-content research-container">
     
-    <section class="content-section" style="text-align: center; margin-bottom: 50px;">
-      <h2 style="border-bottom: none; font-size: 34px; margin-bottom: 10px; font-weight: 600;">Selected Research & Projects</h2>
-      <p style="font-size: 20px; color: #555; font-style: italic; max-width: 700px; margin: 0 auto;">
+    <section class="content-section" style="text-align: center; margin-bottom: 40px;">
+      <h2 style="border-bottom: none; font-size: 28px; margin-bottom: 8px; font-weight: 600;">Selected Research & Projects</h2>
+      <p style="font-size: 17px; color: #555; font-style: italic; max-width: 700px; margin: 0 auto;">
         Focusing on equilibrium and nonequilibrium statistical mechanics, quantum many-body physics, and lattice field theories.
       </p>
     </section>
@@ -523,7 +525,9 @@
   </main>
 
   <footer>
-    <p>&copy; 2026 Rajarshi Giri. All rights reserved.</p>
+    <p style="text-align: center; margin-top: 40px; padding-bottom: 20px; font-size: 14px; color: #666;">
+      &copy; 2026 Rajarshi Giri. All rights reserved.
+    </p>
   </footer>
 
 </body>
