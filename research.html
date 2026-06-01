@@ -320,20 +320,16 @@
     }
     .project-image {
       flex: 0 0 28%; /* Slightly narrower images so text has more room */
+      display: flex;
+      justify-content: center;
     }
 
+    /* Borderless, natural-scaling images */
     .project-image img {
-  width: 100%;
-  aspect-ratio: 16 / 10; /* Forces a landscape shape (adjust to 3/2 or 16/9 if you prefer) */
-  object-fit: cover;     /* Crops the image cleanly to fit the box without distorting/squishing */
-  object-position: center; /* Centers the crop so the middle of the plot is always visible */
-  
-  border-radius: 4px;
-  border: 1px solid #d0d7de;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-}
-    
-
+      width: 100%;      /* Default size, can be overridden inline */
+      height: auto;     /* Maintains the original aspect ratio naturally */
+      display: block;
+    }
     
     /* Smaller, More Refined Typography */
     .project-text {
@@ -420,35 +416,15 @@
     <section class="content-section" style="text-align: center; margin-bottom: 40px;">
       <h2 style="border-bottom: none; font-size: 28px; margin-bottom: 8px; font-weight: 600;">Selected Research & Projects</h2>
       <p style="font-size: 17px; color: #555; font-style: italic; max-width: 700px; margin: 0 auto;">
-        <!-- Focusing on equilibrium and nonequilibrium statistical mechanics, quantum many-body physics, and lattice field theories. -->
-      </p>
-    </section>
-
-    <!-- <div class="project-row">
-      <div class="project-image">
-        <img src="https://github.com/user-attachments/assets/e4e9b40c-b23a-42f6-8eb6-9b4a7afdd68e" alt="Driven Dissipative Systems Dynamics">
-      </div>
-      <div class="project-text">
-        <h3 class="project-title">Steady-State Dynamics in Driven-Dissipative Many-Body Systems</h3>
-        <div class="project-authors"><strong>Rajarshi Giri</strong>, Sayan Choudhury</div>
-        <div class="project-venue">Research Project &bull; Active / Ongoing (2026)</div>
-        <p class="project-desc">
-          Investigating non-equilibrium quantum phenomena, phase transitions, and steady-state dynamics in driven-dissipative interacting lattice architectures.
         </p>
-        <div class="project-links">
-          <span style="color: #666; font-weight: 400; font-style: italic;">Ongoing project</span>
-        </div>
-      </div>
-    </div> -->
+    </section>
 
     <div class="project-row">
       <div class="project-image">
-        <img src="https://github.com/user-attachments/assets/e4e9b40c-b23a-42f6-8eb6-9b4a7afdd68e" alt="Bose-Hubbard Chaos plot">
+        <img src="https://github.com/user-attachments/assets/e4e9b40c-b23a-42f6-8eb6-9b4a7afdd68e" alt="Bose-Hubbard Chaos plot" style="width: 90%;">
       </div>
       <div class="project-text">
         <h3 class="project-title">Regular-to-Chaotic Crossover in Kicked Bose-Hubbard Dimer</h3>
-        <!-- <div class="project-authors"><strong>Rajarshi Giri</strong>, Supervisor : Sayan Choudhury</div> -->
-        <!-- <div class="project-venue">Research Project &bull; 2026</div> -->
         <p class="project-desc">
           Analyzed the transition of regular integrable dynamics to quantum chaotic behavior in an interacting bosonic system using a kicked Bose-Hubbard dimer model.
         </p>
@@ -460,12 +436,10 @@
 
     <div class="project-row">
       <div class="project-image">
-        <img src="https://github.com/user-attachments/assets/e4e9b40c-b23a-42f6-8eb6-9b4a7afdd68e" alt="Disordered Bose-Hubbard Phase space">
+        <img src="https://github.com/user-attachments/assets/e4e9b40c-b23a-42f6-8eb6-9b4a7afdd68e" alt="Disordered Bose-Hubbard Phase space" style="width: 90%;">
       </div>
       <div class="project-text">
         <h3 class="project-title">Coherent Regime Enhancement in Disordered Bose-Hubbard Systems</h3>
-        <!-- <div class="project-authors"><strong>Rajarshi Giri</strong>, Sayan Choudhury</div> -->
-        <!-- <div class="project-venue">Research Project &bull; 2026</div> -->
         <p class="project-desc">
           Studied the localized-to-coherent/superfluid-like crossover phenomena within a two-site disordered Bose-Hubbard framework under the competitive interplay of on-site interactions and effects of finite-temperature on it.
         </p>
@@ -477,12 +451,10 @@
 
     <div class="project-row">
       <div class="project-image">
-        <img src="https://github.com/user-attachments/assets/ffe23d3d-b528-43cc-9128-3864dbc0175a" alt="Variance Reduction Correlators Plot">
+        <img src="https://github.com/user-attachments/assets/ffe23d3d-b528-43cc-9128-3864dbc0175a" alt="Variance Reduction Correlators Plot" style="width: 100%;">
       </div>
       <div class="project-text">
         <h3 class="project-title"><a href="https://phy-lic.github.io/phi4-lattice-simulation/IMSc_report_for_gh.pdf" target="_blank">Variance Reduction in Large Time Correlations in Scalar Field Theory</a></h3>
-        <!-- <div class="project-authors"><strong>Rajarshi Giri</strong>, Padmanath Madanagopalan</div> -->
-        <!-- <div class="project-venue">Research Project &bull; Summer 2025</div> -->
         <p class="project-desc">
           We studied the signal-to-noise problem in large-time correlation functions of lattice scalar field theory. Using the analytically known distribution of bilocal correlators, we implemented a variance-reduction method that improves the extraction of effective masses from Monte Carlo simulations.
         </p>
@@ -495,12 +467,10 @@
 
     <div class="project-row">
       <div class="project-image">
-        <img src="https://github.com/user-attachments/assets/cf4f12d0-a3cc-4009-8d6d-ccc9098da071" alt="Dark matter halo profiling">
+        <img src="https://github.com/user-attachments/assets/cf4f12d0-a3cc-4009-8d6d-ccc9098da071" alt="Dark matter halo profiling" style="width: 100%;">
       </div>
       <div class="project-text">
         <h3 class="project-title">Theoretical Modelling of Gas Properties in Dark Matter Halos</h3>
-        <!-- <div class="project-authors"><strong>Rajarshi Giri</strong>, Priyanka Singh</div> -->
-        <!-- <div class="project-venue">Theoretical Cosmology Review Project</div> -->
         <p class="project-desc">
           Reproduced the Komatsu–Seljak model of intracluster gas in dark matter halos. Derived universal gas density and temperature profiles from hydrostatic equilibrium assumption and a polytropic equation of state. Additionally reproduced the Press–Schechter model of hierarchical structure formation and the resulting dark matter halo mass function. Investigated its dependence on cosmological parameters and cosmic time.
         </p>
@@ -513,11 +483,10 @@
 
     <div class="project-row">
       <div class="project-image">
-        <img src="https://github.com/user-attachments/assets/2531544d-8f0e-4c6e-8cd3-0f251dcd5bf0" alt="Quantum Entanglement Qiskit">
+        <img src="https://github.com/user-attachments/assets/2531544d-8f0e-4c6e-8cd3-0f251dcd5bf0" alt="Quantum Entanglement Qiskit" style="width: 95%;">
       </div>
       <div class="project-text">
         <h3 class="project-title">Quantum Entanglement as a Resource</h3>
-        <!-- <div class="project-authors"><strong>Rajarshi Giri</strong></div> -->
         <div class="project-venue">Term Paper for Advanced Quantum Mechanics course</div>
         <p class="project-desc">
           In this project, we review the conceptual foundations of quantum entanglement and its role as a nonclassical resource in communication and cryptography. We then demonstrate its practical applications through Superdense Coding, Quantum Teleportation and Quantum Key Distribution (BB84 and E91) using Qiskit and IBM Quantum hardware.
